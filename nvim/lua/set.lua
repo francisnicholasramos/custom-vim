@@ -29,3 +29,10 @@ vim.opt.wildmode = { "longest:full", "full" }
 vim.opt.termguicolors = true
 vim.opt.wrap = false
 vim.opt.updatetime = 200
+
+vim.opt.autoread = true
+vim.api.nvim_create_autocmd({"FocusGained", "BufEnter", "CursorHold"}, {
+    callback = function()
+        vim.cmd("checktime")
+    end,
+})
