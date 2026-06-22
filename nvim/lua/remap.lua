@@ -1,3 +1,4 @@
+vim.keymap.set("n", "<leader>w", ":w<CR>") 
 vim.keymap.set("n", ";", ":") 
 vim.keymap.set("n", "<leader>t", ":sp | :terminal<CR>") 
 vim.keymap.set("n", "<leader>v", ":vsp<cr>") 
